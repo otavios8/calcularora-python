@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Executando calculadora..."
+python3 calculadora.py
+
+chmod +x executar.sh
+
+./executar.sh
+
+pip install pyinstaller
+
+pyinstaller --onefile calculadora.py
+
+dist/calculadora
